@@ -1,7 +1,7 @@
 // Created by: Kenny Le
 // Created on: May 2022
 //
-// This program performs a loop
+// This program performs a loop.
 
 using System;
 
