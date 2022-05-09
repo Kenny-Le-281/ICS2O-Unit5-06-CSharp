@@ -27,14 +27,14 @@ class Program
 
         // process
         int counter = 0;
-        
+
         while (counter < secondInteger)
         {
             answer += firstInteger;
             counter++;
         }
 
-        if ((firstInteger < 0) && (secondInteger < 0))
+        if (secondInteger < 0)
         {
             answer = (firstInteger * negativeOne) * (secondInteger * negativeOne);
         }
