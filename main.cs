@@ -12,8 +12,9 @@ class Program
         // This function performs a loop
         int firstInteger;
         int secondInteger;
-        var answer = 0;
-        int negativeOne = -1;
+        int answer = 0;
+        int temp = 0;
+        int counter = 0;
 
         // input
         Console.WriteLine("This program performs a loop by doing repeated addition.");
@@ -26,17 +27,15 @@ class Program
         secondInteger = Convert.ToInt32(Console.ReadLine());
 
         // process
-        int counter = 0;
-
+        if (secondInteger < 0) {
+            temp = firstInteger;
+            firstInteger = secondInteger;
+            secondInteger = temp;
+        }
         while (counter < secondInteger)
         {
             answer += firstInteger;
             counter++;
-        }
-
-        if (secondInteger < 0)
-        {
-            answer = (firstInteger * negativeOne) * (secondInteger * negativeOne);
         }
 
         // output
