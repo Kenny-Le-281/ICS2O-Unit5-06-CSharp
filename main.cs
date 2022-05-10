@@ -27,7 +27,8 @@ class Program
         secondInteger = Convert.ToInt32(Console.ReadLine());
 
         // process
-        if (secondInteger < 0) {
+        if (secondInteger < 0)
+        {
             temp = firstInteger;
             firstInteger = secondInteger;
             secondInteger = temp;
